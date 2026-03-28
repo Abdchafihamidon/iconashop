@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdo Shopping - متجر إلكتروني أنيق للملابس والإكسسوارات النسائية والرجالية</title>
+    <title>iconashop - متجر إلكتروني أنيق للملابس والإكسسوارات النسائية والرجالية</title>
     <style>
         * {
             margin: 0;
@@ -274,7 +274,7 @@
 <body>
     <header>
         <nav>
-            <a href="#" class="logo">Abdo Shopping</a>
+            <a href="#" class="logo">iconashop</a>
             <ul class="nav-links">
                 <li><a href="#home">الرئيسية</a></li>
                 <li><a href="#women">نسائي</a></li>
@@ -292,7 +292,7 @@
     <main>
         <section class="hero" id="home">
             <div>
-                <h1>Abdo Shopping</h1>
+                <h1>iconasop</h1>
                 <p>أناقة لا حدود لها للنساء والرجال</p>
             </div>
         </section>
@@ -326,14 +326,14 @@
         <div class="cart-content">
             <h2>سلة التسوق</h2>
             <div id="cartItems"></div>
-            <div class="total" id="cartTotal">الإجمالي: 0 ريال</div>
+            <div class="total" id="cartTotal">الإجمالي: 01000درهم</div>
             <button class="checkout-btn" onclick="checkout()">إتمام الشراء</button>
             <button onclick="toggleCart()" style="margin-top: 1rem; background: #e74c3c; color: white; border: none; padding: 0.8rem; border-radius: 8px; cursor: pointer;">إغلاق</button>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Abdo Shopping. جميع الحقوق محفوظة. | تصميم أنيق وحديث</p>
+        <p>&copy; 2026 iconqshop. جميع الحقوق محفوظة. | تصميم أنيق وحديث</p>
     </footer>
 
     <script>
@@ -341,7 +341,7 @@
         const products = [
             
             {id: 1, name: 'حقيبة يد' , price: 250, category: 'women',image: ' images/handbag.jpeg ' },
-            {id: 2, name: 'bags' , price: 450, categorey: 'women' , image: '757bd13faf496c794834dcce22c63da6c883ca82' },
+            {id: 2, name: 'bags' , price: 450, categorey: 'women' ,image: ' images/bags.jpeg ' },
             
         ];
 
@@ -414,13 +414,13 @@
             cartItems.innerHTML = cart.map(item => `
                 <div class="cart-item">
                     <span>${item.name} (x${item.quantity})</span>
-                    <span>${item.price * item.quantity} ريال</span>
+                    <span>${item.price * item.quantity} درهم</span>
                     <button onclick="removeFromCart(${item.id})" style="background: #e74c3c; color: white; border: none; padding: 0.3rem 0.8rem; border-radius: 4px; cursor: pointer;">حذف</button>
                 </div>
             `).join('');
 
             const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-            total.textContent = `الإجمالي: ${totalPrice} ريال`;
+            total.textContent = `الإجمالي: ${totalPrice} درهم`;
         }
 
         // حذف من السلة
